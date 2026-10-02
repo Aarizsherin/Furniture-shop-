@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comfort Home Furniture | Quality Furniture for Every Room</title>
+  <meta name="description" content="Discover warm, modern, and handcrafted furniture at Comfort Home Furniture. Explore living room sofas, wooden beds, dining sets, ergonomic chairs, wardrobes, and more at honest prices.">
+  <meta name="keywords" content="furniture, sofa, wooden bed, dining table, chairs, wardrobe, home decor, comfort home furniture, Bengaluru">
+  
+  <!-- Google Fonts: Plus Jakarta Sans for clean modern clarity & Fraunces for warm handcrafted elegance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container announcement-content">
+      <p class="announcement-text">
+        <span class="announcement-badge">Special Offer</span>
+        <span>✨ Festive Home Makeover: Up to 20% OFF on premium sofas | Code: <strong>COMFORT20</strong></span>
+      </p>
+      <div class="announcement-links">
+        <span class="free-shipping-tag">🚚 Free Delivery above ₹50,000</span>
+        <span class="contact-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +91 98765 43210</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="main-header" id="mainHeader">
+    <div class="container nav-container">
+      <!-- Shop Logo -->
+      <a href="#hero" class="shop-logo" id="brandLogo" aria-label="Comfort Home Furniture Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 19v2M18 19v2M3 13h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2z"></path>
+            <path d="M5 13v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-brand">Comfort Home</span>
+          <span class="logo-sub">FURNITURE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active" id="navHome">Home</a></li>
+          <li><a href="#products" class="nav-link" id="navProducts">Products</a></li>
+          <li><a href="#categories" class="nav-link" id="navCategories">Categories</a></li>
+          <li><a href="#about" class="nav-link" id="navAbout">About Us</a></li>
+          <li><a href="#offers" class="nav-link" id="navOffers">Offers</a></li>
+          <li><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Search, Wishlist, Cart, Mobile Toggle) -->
+      <div class="nav-actions">
+        <!-- Quick Search Trigger -->
+        <button class="nav-action-btn" id="searchTriggerBtn" title="Search Products" aria-label="Search Products">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="nav-action-btn cart-btn" id="cartOpenBtn" title="Shopping Cart" aria-label="Open Shopping Cart">
+          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count-badge" id="cartBadge">0</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Open Mobile Menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-header">
+        <span class="drawer-title">Menu</span>
+        <button class="drawer-close-btn" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link" data-close-drawer>Home</a></li>
+        <li><a href="#products" class="mobile-nav-link" data-close-drawer>Products</a></li>
+        <li><a href="#categories" class="mobile-nav-link" data-close-drawer>Categories</a></li>
+        <li><a href="#about" class="mobile-nav-link" data-close-drawer>About Us</a></li>
+        <li><a href="#offers" class="mobile-nav-link" data-close-drawer>Offers</a></li>
+        <li><a href="#contact" class="mobile-nav-link" data-close-drawer>Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <p class="drawer-contact-info">📞 +91 98765 43210</p>
+        <p class="drawer-contact-info">✉️ support@comforthomefurniture.in</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="hero-tag-dot"></span>
+            Crafted for Comfort & Durability
+          </div>
+          <h1 class="hero-title">Make Your Home More Comfortable</h1>
+          <p class="hero-description">Quality furniture for every room in your home.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary" id="heroShopNowBtn">
+              <span>Shop Now</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#categories" class="btn btn-secondary" id="heroViewCollectionBtn">
+              <span>View Collection</span>
+            </a>
+          </div>
+
+          <!-- Hero Highlights Strip -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num">10k+</span>
+              <span class="highlight-text">Happy Homes</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-num">100%</span>
+              <span class="highlight-text">Solid Wood Options</span>
+            </div>
+            <div class="highlight-divider"></div>
+            <div class="highlight-item">
+              <span class="highlight-num">5 Years</span>
+              <span class="highlight-text">Warranty Included</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR CATEGORIES SECTION -->
+    <section class="section categories-section" id="categories">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-title">Explore by Space</span>
+          <h2 class="section-title">Popular Categories</h2>
+          <p class="section-desc">Carefully crafted collections designed to suit every lifestyle and corner of your home.</p>
+        </div>
+
+        <div class="categories-grid" id="categoriesGrid">
+          <!-- Dynamically populated or static semantic cards -->
+          <!-- Category 1: Sofas -->
+          <div class="category-card" data-category="Sofas">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Comfortable Sofas" loading="lazy">
+              <div class="category-card-overlay"></div>
+            </div>
+            <div class="category-card-body">
+              <span class="category-count">18+ Designs</span>
+              <h3 class="category-name">Sofas</h3>
+              <p class="category-desc">Sectionals, 3-seaters & recliners</p>
+              <button class="btn btn-sm btn-outline view-category-btn" data-category="Sofas">View Products &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Category 2: Beds -->
+          <div class="category-card" data-category="Beds">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Wooden Beds" loading="lazy">
+              <div class="category-card-overlay"></div>
+            </div>
+            <div class="category-card-body">
+              <span class="category-count">14+ Designs</span>
+              <h3 class="category-name">Beds</h3>
+              <p class="category-desc">King, queen & solid wood frames</p>
+              <button class="btn btn-sm btn-outline view-category-btn" data-category="Beds">View Products &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Category 3: Dining Tables -->
+          <div class="category-card" data-category="Dining Tables">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Dining Tables" loading="lazy">
+              <div class="category-card-overlay"></div>
+            </div>
+            <div class="category-card-body">
+              <span class="category-count">12+ Designs</span>
+              <h3 class="category-name">Dining Tables</h3>
+              <p class="category-desc">4 & 6 seater hardwood sets</p>
+              <button class="btn btn-sm btn-outline view-category-btn" data-category="Dining Tables">View Products &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Category 4: Chairs -->
+          <div class="category-card" data-category="Chairs">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=600&q=80" alt="Comfort Chairs" loading="lazy">
+              <div class="category-card-overlay"></div>
+            </div>
+            <div class="category-card-body">
+              <span class="category-count">20+ Designs</span>
+              <h3 class="category-name">Chairs</h3>
+              <p class="category-desc">Accent, lounge & rocking chairs</p>
+              <button class="btn btn-sm btn-outline view-category-btn" data-category="Chairs">View Products &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Category 5: Wardrobes -->
+          <div class="category-card" data-category="Wardrobes">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="Wooden Wardrobes" loading="lazy">
+              <div class="category-card-overlay"></div>
+            </div>
+            <div class="category-card-body">
+              <span class="category-count">10+ Designs</span>
+              <h3 class="category-name">Wardrobes</h3>
+              <p class="category-desc">Spacious 2, 3 & 4-door storage</p>
+              <button class="btn btn-sm btn-outline view-category-btn" data-category="Wardrobes">View Products &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Category 6: Office Furniture -->
+          <div class="category-card" data-category="Office Furniture">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=600&q=80" alt="Office Furniture" loading="lazy">
+              <div class="category-card-overlay"></div>
+            </div>
+            <div class="category-card-body">
+              <span class="category-count">16+ Designs</span>
+              <h3 class="category-name">Office Furniture</h3>
+              <p class="category-desc">Ergonomic desks & study setups</p>
+              <button class="btn btn-sm btn-outline view-category-btn" data-category="Office Furniture">View Products &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Category 7: TV Units -->
+          <div class="category-card" data-category="TV Units">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="TV Units" loading="lazy">
+              <div class="category-card-overlay"></div>
+            </div>
+            <div class="category-card-body">
+              <span class="category-count">8+ Designs</span>
+              <h3 class="category-name">TV Units</h3>
+              <p class="category-desc">Modern consoles & entertainment hubs</p>
+              <button class="btn btn-sm btn-outline view-category-btn" data-category="TV Units">View Products &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Category 8: Coffee Tables -->
+          <div class="category-card" data-category="Coffee Tables">
+            <div class="category-image-wrap">
+              <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=600&q=80" alt="Coffee Tables" loading="lazy">
+              <div class="category-card-overlay"></div>
+            </div>
+            <div class="category-card-body">
+              <span class="category-count">15+ Designs</span>
+              <h3 class="category-name">Coffee Tables</h3>
+              <p class="category-desc">Nesting tables & wooden centerpieces</p>
+              <button class="btn btn-sm btn-outline view-category-btn" data-category="Coffee Tables">View Products &rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIAL OFFERS SECTION -->
+    <section class="section offers-section" id="offers">
+      <div class="container">
+        <div class="offers-header-row">
+          <div>
+            <span class="section-sub-title">Limited Time Deals</span>
+            <h2 class="section-title">Special Offers & Savings</h2>
+          </div>
+          <button class="btn btn-primary" id="shopAllOffersBtn">Shop Offers</button>
+        </div>
+
+        <div class="offers-grid">
+          <!-- Offer Card 1 -->
+          <div class="offer-card offer-card-highlight">
+            <div class="offer-badge">Best Deal</div>
+            <div class="offer-discount">20% OFF</div>
+            <h3 class="offer-title">On Selected Sofas</h3>
+            <p class="offer-desc">Upgrade your living room with plush fabrics, premium foams, and sturdy teak wood frames.</p>
+            <div class="offer-coupon">
+              <span>Use Code:</span>
+              <button class="coupon-code-btn" data-coupon="COMFORT20" title="Click to copy coupon">
+                <strong>COMFORT20</strong>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+            <button class="btn btn-sm btn-white offer-cta-btn" data-filter-category="Sofas">Shop Sofas &rarr;</button>
+          </div>
+
+          <!-- Offer Card 2 -->
+          <div class="offer-card">
+            <div class="offer-badge">Bedroom Special</div>
+            <div class="offer-discount">15% OFF</div>
+            <h3 class="offer-title">On Bedroom Furniture</h3>
+            <p class="offer-desc">Rest in tranquility with solid wood king beds, spacious wardrobes, and matching nightstands.</p>
+            <div class="offer-coupon">
+              <span>Use Code:</span>
+              <button class="coupon-code-btn" data-coupon="BEDROOM15" title="Click to copy coupon">
+                <strong>BEDROOM15</strong>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+            <button class="btn btn-sm btn-white offer-cta-btn" data-filter-category="Beds">Shop Beds &rarr;</button>
+          </div>
+
+          <!-- Offer Card 3 -->
+          <div class="offer-card">
+            <div class="offer-badge">Free Shipping</div>
+            <div class="offer-discount">FREE Delivery</div>
+            <h3 class="offer-title">Orders Above ₹50,000</h3>
+            <p class="offer-desc">Zero shipping and handling charges with complimentary in-home technician assembly.</p>
+            <div class="offer-coupon">
+              <span>Automatic:</span>
+              <span class="auto-apply-tag">Applied at Checkout</span>
+            </div>
+            <a href="#products" class="btn btn-sm btn-white">Explore All &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION (SEARCH, FILTERS, CATALOG) -->
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-title">Our Handpicked Range</span>
+          <h2 class="section-title">Explore Furniture Products</h2>
+          <p class="section-desc">Search, filter, and find furniture designed for real comfort and everyday living.</p>
+        </div>
+
+        <!-- Filter & Search Control Panel -->
+        <div class="products-toolbar">
+          <!-- Live Search Bar -->
+          <div class="search-box-wrapper">
+            <svg class="search-input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="productSearchInput" class="product-search-input" placeholder="Search by name, category, or style (e.g. Sofa, Bed, Table)..." autocomplete="off">
+            <button class="search-clear-btn" id="searchClearBtn" title="Clear search" aria-label="Clear search">&times;</button>
+          </div>
+
+          <!-- Secondary Filters Row -->
+          <div class="filters-row">
+            <!-- Price Range Filter -->
+            <div class="filter-group">
+              <label for="priceFilter" class="filter-label">Price Range:</label>
+              <select id="priceFilter" class="filter-select">
+                <option value="all">All Prices</option>
+                <option value="under-10000">Under ₹10,000</option>
+                <option value="10000-25000">₹10,000 - ₹25,000</option>
+                <option value="25000-40000">₹25,000 - ₹40,000</option>
+                <option value="above-40000">Above ₹40,000</option>
+              </select>
+            </div>
+
+            <!-- Rating Filter -->
+            <div class="filter-group">
+              <label for="ratingFilter" class="filter-label">Min Rating:</label>
+              <select id="ratingFilter" class="filter-select">
+                <option value="all">All Ratings</option>
+                <option value="4.5">★ 4.5 & above</option>
+                <option value="4.7">★ 4.7 & above</option>
+                <option value="4.9">★ 4.9 only</option>
+              </select>
+            </div>
+
+            <!-- Sort Option -->
+            <div class="filter-group">
+              <label for="sortFilter" class="filter-label">Sort By:</label>
+              <select id="sortFilter" class="filter-select">
+                <option value="featured">Featured First</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+                <option value="name">Name: A to Z</option>
+              </select>
+            </div>
+
+            <!-- Reset Filters -->
+            <button class="btn btn-sm btn-ghost" id="resetFiltersBtn" title="Reset all filters">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v6h6"></path><path d="M21 12A9 9 0 0 0 6 5.3L3 8"></path><path d="M21 22v-6h-6"></path><path d="M3 12a9 9 0 0 0 15 6.7l3-2.7"></path></svg>
+              Reset
+            </button>
+          </div>
+
+          <!-- Category Pill Buttons -->
+          <div class="category-pills" id="categoryPills">
+            <button class="category-pill active" data-category="all">All Products</button>
+            <button class="category-pill" data-category="Sofas">Sofas</button>
+            <button class="category-pill" data-category="Beds">Beds</button>
+            <button class="category-pill" data-category="Dining Tables">Dining Tables</button>
+            <button class="category-pill" data-category="Chairs">Chairs</button>
+            <button class="category-pill" data-category="Wardrobes">Wardrobes</button>
+            <button class="category-pill" data-category="Office Furniture">Office Furniture</button>
+            <button class="category-pill" data-category="TV Units">TV Units</button>
+            <button class="category-pill" data-category="Coffee Tables">Coffee Tables</button>
+          </div>
+        </div>
+
+        <!-- Filter Results Bar -->
+        <div class="results-status-bar">
+          <span class="results-count" id="resultsCount">Showing 12 products</span>
+          <span class="results-tag" id="activeFilterTag">Category: All</span>
+        </div>
+
+        <!-- Product Cards Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Dynamically populated via script.js -->
+        </div>
+
+        <!-- No Products Found State -->
+        <div class="no-products-state hidden" id="noProductsState">
+          <div class="empty-icon-wrap">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <h3>No matching furniture found</h3>
+          <p>Try adjusting your search keywords, price range, or category filter.</p>
+          <button class="btn btn-primary" id="clearAllFiltersBtn">Clear All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="section why-us-section" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-title">The Comfort Home Promise</span>
+          <h2 class="section-title">Why Choose Us</h2>
+          <p class="section-desc">We combine traditional woodworking integrity with modern ergonomic design.</p>
+        </div>
+
+        <div class="why-us-grid">
+          <!-- Feature 1 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <h3 class="why-title">Quality Furniture</h3>
+            <p class="why-desc">Constructed with sustainably sourced hardwoods, high-density comfort foam, and stain-resistant upholstery.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="why-title">Affordable Prices</h3>
+            <p class="why-desc">Direct workshop-to-customer pricing without dealership middleman markups, bringing you authentic luxury within budget.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="why-title">Fast Delivery</h3>
+            <p class="why-desc">Carefully packaged and delivered directly to your doorstep with complimentary in-home technician assembly.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="why-card">
+            <div class="why-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="why-title">Customer Support</h3>
+            <p class="why-desc">Friendly expert assistance ready to guide your room planning, color selection, and after-sales support 7 days a week.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-column">
+            <div class="about-image-stack">
+              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Comfort Home Furniture Living Room Showcase" class="about-main-img" loading="lazy">
+              <div class="about-badge-card">
+                <span class="badge-num">15+</span>
+                <span class="badge-text">Years of Crafting Dream Homes</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-column">
+            <span class="section-sub-title">About Comfort Home</span>
+            <h2 class="section-title">Quality Furniture for Every Home & Office at Honest Prices</h2>
+            <p class="about-paragraph">
+              Founded with a clear belief that great furniture should be enduring, comfortable, and affordable, 
+              <strong>Comfort Home Furniture</strong> provides thoughtfully designed furniture for modern Indian homes and productive workplaces.
+            </p>
+            <p class="about-paragraph">
+              Every sofa, bed, and dining table is crafted by skilled artisans using premium materials — from seasoned teak wood and resilient fabric weaves to ergonomic cushions designed for everyday relaxation. We believe your living space should be a true sanctuary.
+            </p>
+            
+            <div class="about-features-list">
+              <div class="about-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2b1810" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Sustainably harvested seasoned woods</span>
+              </div>
+              <div class="about-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2b1810" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Ergonomically engineered for posture support</span>
+              </div>
+              <div class="about-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2b1810" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Transparent pricing with no hidden charges</span>
+              </div>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="#products" class="btn btn-primary">Browse Our Catalog</a>
+              <a href="#contact" class="btn btn-outline">Visit Our Showroom</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-title">Get In Touch</span>
+          <h2 class="section-title">Visit Our Shop or Send a Message</h2>
+          <p class="section-desc">Have questions about dimensions, wood finishes, or custom orders? We're here to help.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information & Map -->
+          <div class="contact-info-column">
+            <div class="contact-card">
+              <h3 class="contact-box-title">Store Information</h3>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Shop Address:</strong>
+                  <p>42 Woodcraft Avenue, 100 Feet Road, Indiranagar, Bengaluru, Karnataka 560038</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Phone Number:</strong>
+                  <p><a href="tel:+919876543210">+91 98765 43210</a> / <a href="tel:+918023456789">+91 80 2345 6789</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Email Address:</strong>
+                  <p><a href="mailto:support@comforthomefurniture.in">support@comforthomefurniture.in</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div class="contact-item-text">
+                  <strong>Business Hours:</strong>
+                  <p>Monday – Saturday: 9:30 AM – 8:30 PM<br>Sunday: 10:00 AM – 7:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stylized Interactive Google Maps Placeholder -->
+            <div class="map-container">
+              <div class="map-header">
+                <span class="map-badge">📍 Showroom Location</span>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="map-link">Open in Google Maps &nearr;</a>
+              </div>
+              <div class="map-placeholder">
+                <div class="map-grid-bg"></div>
+                <div class="map-pin">
+                  <div class="pin-pulse"></div>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="#c87d55" stroke="#ffffff" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="#ffffff"></circle></svg>
+                  <div class="pin-label">Comfort Home Furniture</div>
+                </div>
+                <div class="map-controls">
+                  <span>Indiranagar Showroom • 2 floors of living & bedroom displays</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-column">
+            <div class="contact-form-card">
+              <h3 class="contact-box-title">Send Us a Message</h3>
+              <p class="form-subtitle">Fill in the form below and our furniture consultant will get back to you within 2 business hours.</p>
+
+              <form id="contactForm" novalidate>
+                <!-- Name -->
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Full Name <span class="required">*</span></label>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Ramesh Kumar" required>
+                  <span class="field-error" id="nameError">Please enter your name</span>
+                </div>
+
+                <!-- Email & Phone Row -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">Email Address <span class="required">*</span></label>
+                    <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. ramesh@example.com" required>
+                    <span class="field-error" id="emailError">Please enter a valid email address</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactPhone" class="form-label">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="e.g. 9876543210" required>
+                    <span class="field-error" id="phoneError">Please enter a valid 10-digit phone number</span>
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                  <label for="contactMessage" class="form-label">Your Message <span class="required">*</span></label>
+                  <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Tell us about the furniture you're looking for, custom dimensions, or any queries..." required></textarea>
+                  <span class="field-error" id="messageError">Please enter your message (at least 10 characters)</span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block" id="contactSubmitBtn">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </form>
+
+              <!-- Form Success Notice (shown on submit) -->
+              <div class="form-success-box hidden" id="formSuccessNotice">
+                <div class="success-icon-wrap">✓</div>
+                <h4>Thank you! Your message has been sent.</h4>
+                <p>One of our team members will contact you shortly on your provided phone number or email.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-col footer-brand-col">
+          <a href="#hero" class="footer-logo">
+            <div class="logo-icon-wrap small">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 19v2M18 19v2M3 13h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2z"></path><path d="M5 13v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path></svg>
+            </div>
+            <span class="logo-brand">Comfort Home</span>
+          </a>
+          <p class="footer-bio">
+            Comfort Home Furniture creates warm, durable, and thoughtfully crafted furniture for living rooms, bedrooms, dining spaces, and home offices.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="2" x2="12" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#products">Products Catalog</a></li>
+            <li><a href="#categories">Browse Categories</a></li>
+            <li><a href="#offers">Special Offers</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#about">About Our Workshop</a></li>
+            <li><a href="#contact">Contact & Showroom</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Categories -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#products" class="footer-cat-link" data-category="Sofas">Sofas & Couches</a></li>
+            <li><a href="#products" class="footer-cat-link" data-category="Beds">Wooden King & Queen Beds</a></li>
+            <li><a href="#products" class="footer-cat-link" data-category="Dining Tables">Dining Table Sets</a></li>
+            <li><a href="#products" class="footer-cat-link" data-category="Chairs">Ergonomic & Accent Chairs</a></li>
+            <li><a href="#products" class="footer-cat-link" data-category="Wardrobes">Modular Wardrobes</a></li>
+            <li><a href="#products" class="footer-cat-link" data-category="Office Furniture">Office Desks & Study</a></li>
+            <li><a href="#products" class="footer-cat-link" data-category="TV Units">TV Consoles</a></li>
+            <li><a href="#products" class="footer-cat-link" data-category="Coffee Tables">Coffee & Center Tables</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Newsletter -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Information</h4>
+          <ul class="footer-contact-list">
+            <li>📍 42 Woodcraft Ave, Indiranagar, Bengaluru</li>
+            <li>📞 +91 98765 43210</li>
+            <li>✉️ support@comforthomefurniture.in</li>
+            <li>⏰ Mon - Sat: 9:30 AM - 8:30 PM</li>
+          </ul>
+
+          <div class="newsletter-wrap">
+            <h5 class="newsletter-title">Subscribe for Special Offers</h5>
+            <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); window.handleNewsletter();">
+              <input type="email" placeholder="Your email address" required class="newsletter-input" id="newsletterEmail">
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe">&rarr;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; <span id="currentYear"></span> <strong>Comfort Home Furniture</strong>. All rights reserved. Handcrafted for your peaceful living.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Warranty Guide</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MODAL: PRODUCT DETAILS QUICK VIEW -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="productDetailModal" aria-hidden="true">
+    <div class="modal-content product-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+      <button class="modal-close-btn" id="closeDetailModalBtn" aria-label="Close product details">&times;</button>
+      
+      <div class="modal-body product-detail-layout" id="productDetailContent">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- SLIDE DRAWER: FUNCTIONAL SHOPPING CART -->
+  <!-- ============================================== -->
+  <div class="cart-backdrop" id="cartBackdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart" aria-hidden="true">
+    <div class="cart-header">
+      <div class="cart-header-title-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        <h3 class="cart-title">Your Shopping Cart</h3>
+        <span class="cart-badge-count" id="drawerCartCount">0</span>
+      </div>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close Cart">&times;</button>
+    </div>
+
+    <!-- Free Delivery Progress Tracker -->
+    <div class="cart-shipping-notice" id="shippingTracker">
+      <div class="shipping-notice-text" id="shippingNoticeText">
+        Add ₹50,000 for FREE Doorstep Delivery & Assembly
+      </div>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Populated via script.js -->
+    </div>
+
+    <!-- Cart Empty State -->
+    <div class="cart-empty-state hidden" id="cartEmptyState">
+      <div class="empty-cart-icon">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#b0a8a0" stroke-width="1.5"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+      </div>
+      <h4>Your cart is empty</h4>
+      <p>Looks like you haven't added any furniture yet.</p>
+      <button class="btn btn-primary" id="cartContinueShoppingEmptyBtn">Start Shopping</button>
+    </div>
+
+    <!-- Cart Summary & Actions Footer -->
+    <div class="cart-footer" id="cartFooter">
+      <!-- Promo code coupon -->
+      <div class="cart-coupon-box">
+        <input type="text" id="cartCouponInput" placeholder="Discount code (e.g. COMFORT20)" class="coupon-input">
+        <button class="btn btn-sm btn-outline" id="cartCouponBtn">Apply</button>
+      </div>
+      <div class="coupon-applied-tag hidden" id="couponAppliedTag">
+        <span>Coupon <strong id="appliedCouponCode"></strong> applied!</span>
+        <button class="remove-coupon-btn" id="removeCouponBtn">&times;</button>
+      </div>
+
+      <!-- Financial Breakdown -->
+      <div class="cart-breakdown">
+        <div class="cart-breakdown-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">₹0</span>
+        </div>
+        <div class="cart-breakdown-row discount-row hidden" id="cartDiscountRow">
+          <span>Discount</span>
+          <span id="cartDiscount">-₹0</span>
+        </div>
+        <div class="cart-breakdown-row">
+          <span>Delivery & Assembly</span>
+          <span id="cartDeliveryCharge">₹999</span>
+        </div>
+        <div class="cart-breakdown-total">
+          <span>Total Price</span>
+          <span class="total-amount" id="cartTotal">₹0</span>
+        </div>
+      </div>
+
+      <div class="cart-action-buttons">
+        <button class="btn btn-outline btn-block" id="cartContinueShoppingBtn">Continue Shopping</button>
+        <button class="btn btn-primary btn-block" id="cartCheckoutBtn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ============================================== -->
+  <!-- MODAL: CHECKOUT & ORDER CONFIRMATION -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+    <div class="modal-content checkout-modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close-btn" id="closeCheckoutBtn" aria-label="Close Checkout">&times;</button>
+
+      <div class="checkout-layout">
+        <div class="checkout-form-side">
+          <h3 class="checkout-header-title">Checkout & Shipping Details</h3>
+          
+          <form id="checkoutForm" novalidate>
+            <div class="checkout-step-title">1. Delivery Address</div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="shipName">Full Name *</label>
+                <input type="text" id="shipName" class="form-input" required placeholder="Full Name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="shipPhone">Phone Number *</label>
+                <input type="tel" id="shipPhone" class="form-input" required placeholder="10-digit Mobile">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="shipAddress">Street Address / House No. *</label>
+              <input type="text" id="shipAddress" class="form-input" required placeholder="Apartment, Street name, Landmark">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="shipCity">City *</label>
+                <input type="text" id="shipCity" class="form-input" required value="Bengaluru">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="shipPincode">Pincode *</label>
+                <input type="text" id="shipPincode" class="form-input" required placeholder="560038">
+              </div>
+            </div>
+
+            <div class="checkout-step-title" style="margin-top: 1.5rem;">2. Payment Method</div>
+            <div class="payment-options-grid">
+              <label class="payment-option-label selected">
+                <input type="radio" name="paymentMethod" value="cod" checked>
+                <div class="payment-option-card">
+                  <strong>Cash / UPI on Delivery</strong>
+                  <small>Pay at your doorstep after inspecting the furniture</small>
+                </div>
+              </label>
+
+              <label class="payment-option-label">
+                <input type="radio" name="paymentMethod" value="online">
+                <div class="payment-option-card">
+                  <strong>Online UPI / Cards / NetBanking</strong>
+                  <small>GPay, PhonePe, Cards & NetBanking</small>
+                </div>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1.5rem;" id="placeOrderBtn">
+              Confirm & Place Order
+            </button>
+          </form>
+        </div>
+
+        <div class="checkout-summary-side">
+          <h4 class="checkout-summary-title">Order Summary</h4>
+          <div class="checkout-items-preview" id="checkoutItemsPreview">
+            <!-- Rendered by script.js -->
+          </div>
+          <div class="checkout-total-box">
+            <div class="checkout-row">
+              <span>Items Total:</span>
+              <span id="checkoutSubtotal">₹0</span>
+            </div>
+            <div class="checkout-row">
+              <span>Delivery & Assembly:</span>
+              <span id="checkoutDelivery">₹0</span>
+            </div>
+            <div class="checkout-row final-total">
+              <span>Grand Total:</span>
+              <span id="checkoutGrandTotal">₹0</span>
+            </div>
+          </div>
+          <div class="checkout-guarantee">
+            🛡️ 100% Genuine Solid Wood • 5-Year Warranty • Free In-Home Placement
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDER SUCCESS CONFIRMATION MODAL -->
+  <div class="modal-backdrop" id="orderSuccessModal" aria-hidden="true">
+    <div class="modal-content success-modal-content text-center">
+      <div class="success-icon-large">🎉</div>
+      <h3 class="success-title">Thank You For Your Order!</h3>
+      <p class="order-id-label">Order Reference ID: <strong id="confirmedOrderId">#CH-9281</strong></p>
+      <p class="success-desc">
+        We've received your order. Our logistics specialist will call you shortly to confirm the scheduled delivery date and in-home assembly time.
+      </p>
+      <div class="success-actions">
+        <button class="btn btn-primary" id="successBackHomeBtn">Continue Browsing</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Quick Floating Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top" title="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
